@@ -14,11 +14,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-public class MyRestController {
+public class UserRestController {
     private final UserService userService;
     private final RoleService roleService;
 
-    public MyRestController(UserService userService, RoleService roleService) {
+    public UserRestController(UserService userService, RoleService roleService) {
         this.userService = userService;
         this.roleService = roleService;
     }
