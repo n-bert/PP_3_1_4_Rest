@@ -5,5 +5,4 @@ import ru.kata.spring.bootstrap.demo.model.Role;
 
 public interface RoleRepository extends CrudRepository<Role, Long> {
     Role findByName(String name);
-
 }

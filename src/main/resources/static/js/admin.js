@@ -117,7 +117,7 @@ async function handleNewUserSubmit(event) {
     event.preventDefault();
     const submitData = await getSubmitData(event.target.form);
     const response = await userFetchService.addUser(submitData);
-    if (response.ok){
+    if (response.ok) {
         userFetchService.getAllUsers().then(users => {
             generateAdminUserTable(usersTable, users);
             document.getElementById("nav-home-tab").click();
